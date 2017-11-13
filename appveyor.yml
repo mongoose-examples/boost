@@ -1,16 +1,21 @@
+version: 1.0.{build}-{branch}
+
 branches:
   only:
     - develop
     - master
 
-image:
-  - Visual Studio 2017
-  - Visual Studio 2015
-  - Visual Studio 2013
-
 environment:
   matrix:
-    - SCRIPT: ci_boost_status
+    - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2013
+      SCRIPT: ci_boost_test_library
+    - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+      SCRIPT: ci_boost_test_library
+    - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+      SCRIPT: ci_boost_test_library
+    - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+      SCRIPT: ci_boost_status
+      TARGET: quick
 
 init:
   - cd %APPVEYOR_BUILD_FOLDER%/..

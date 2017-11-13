@@ -490,39 +490,35 @@
 	path = libs/endian
 	url = https://github.com/boostorg/endian.git
 	fetchRecurseSubmodules = on-demand
-[submodule "tools/bpm"]
-	path = tools/bpm
-	url = https://github.com/boostorg/bpm.git
-	fetchRecurseSubmodules = on-demand
 [submodule "sort"]
 	path = libs/sort
 	url = https://github.com/boostorg/sort.git
 	fetchRecurseSubmodules = on-demand
-[submodule "libs/coroutine2"]
+[submodule "coroutine2"]
 	path = libs/coroutine2
 	url = https://github.com/boostorg/coroutine2.git
 	fetchRecurseSubmodules = on-demand
-[submodule "libs/vmd"]
+[submodule "vmd"]
 	path = libs/vmd
 	url = https://github.com/boostorg/vmd.git
 	fetchRecurseSubmodules = on-demand
-[submodule "libs/compute"]
+[submodule "compute"]
 	path = libs/compute
 	url = https://github.com/boostorg/compute.git
 	fetchRecurseSubmodules = on-demand
-[submodule "libs/dll"]
+[submodule "dll"]
 	path = libs/dll
 	url = https://github.com/boostorg/dll.git
 	fetchRecurseSubmodules = on-demand
-[submodule "libs/metaparse"]
+[submodule "metaparse"]
 	path = libs/metaparse
 	url = https://github.com/boostorg/metaparse.git
 	fetchRecurseSubmodules = on-demand
-[submodule "libs/hana"]
+[submodule "hana"]
 	path = libs/hana
 	url = https://github.com/boostorg/hana.git
 	fetchRecurseSubmodules = on-demand
-[submodule "libs/qvm"]
+[submodule "qvm"]
 	path = libs/qvm
 	url = https://github.com/boostorg/qvm.git
 	fetchRecurseSubmodules = on-demand
@@ -542,4 +538,20 @@
 [submodule "poly_collection"]
 	path = libs/poly_collection
 	url = ../poly_collection.git
+	fetchRecurseSubmodules = on-demand
+[submodule "beast"]
+	path = libs/beast
+	url = ../beast.git
+	fetchRecurseSubmodules = on-demand
+[submodule "mp11"]
+	path = libs/mp11
+	url = ../mp11.git
+	fetchRecurseSubmodules = on-demand
+[submodule "callable_traits"]
+	path = libs/callable_traits
+	url = ../callable_traits.git
+	fetchRecurseSubmodules = on-demand
+[submodule "contract"]
+	path = libs/contract
+	url = ../contract.git
 	fetchRecurseSubmodules = on-demand
